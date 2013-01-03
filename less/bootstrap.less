@@ -49,10 +49,6 @@
 	@import "pagination.less";
 	@import "pager.less";
 
-	// Components: Popovers
-	@import "modals.less";
-	@import "tooltip.less";
-	@import "popovers.less";
 
 	// Components: Misc
 	@import "thumbnails.less";
@@ -63,7 +59,15 @@
 	@import "carousel.less";
 	@import "hero-unit.less";
 
-	// Utility classes
-	@import "utilities.less"; // Has to be last to override when necessary
 
 }
+
+@import "component-animations.less";
+
+// Components: Popovers
+@import "modals.less";
+@import "tooltip.less";
+@import "popovers.less";
+
+// Utility classes
+@import "utilities.less"; // Has to be last to override when necessary
