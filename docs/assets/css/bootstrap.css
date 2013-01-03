@@ -8,10 +8,83 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
 .bootstrap-scope {
   /* Allow for input prepend/append in search forms */
 
-  /* White icons with optional class, or on hover/active states of certain elements */
+  /*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: Lead Product Designer @ http://kyruus.com
+
+    */
+
+  /*  Font Awesome styles
+    ------------------------------------------------------- */
+
+  /* makes the font 33% larger relative to the icon container */
+
+  /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+
+  /* \f020 doesn't work in Safari. all shifted one down */
 
   /* move down carets for tabs */
 
@@ -196,38 +269,6 @@
   .bootstrap-scope h3 {
     page-break-after: avoid;
   }
-}
-
-.bootstrap-scope .clearfix {
-  *zoom: 1;
-}
-
-.bootstrap-scope .clearfix:before,
-.bootstrap-scope .clearfix:after {
-  display: table;
-  line-height: 0;
-  content: "";
-}
-
-.bootstrap-scope .clearfix:after {
-  clear: both;
-}
-
-.bootstrap-scope .hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-
-.bootstrap-scope .input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .bootstrap-scope body {
@@ -2250,596 +2291,913 @@ textarea.span1,
   background-color: #c4e3f3;
 }
 
-.bootstrap-scope [class^="icon-"],
-.bootstrap-scope [class*=" icon-"] {
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/fontawesome-webfont.eot');
+  src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
+}
+
+.bootstrap-scope [class^="icon-"]:before,
+.bootstrap-scope [class*=" icon-"]:before {
   display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-top: 1px;
-  *margin-right: .3em;
-  line-height: 14px;
-  vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
-  background-position: 14px 14px;
-  background-repeat: no-repeat;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
 }
 
-.bootstrap-scope .icon-white,
-.bootstrap-scope .nav-pills > .active > a > [class^="icon-"],
-.bootstrap-scope .nav-pills > .active > a > [class*=" icon-"],
-.bootstrap-scope .nav-list > .active > a > [class^="icon-"],
-.bootstrap-scope .nav-list > .active > a > [class*=" icon-"],
-.bootstrap-scope .navbar-inverse .nav > .active > a > [class^="icon-"],
-.bootstrap-scope .navbar-inverse .nav > .active > a > [class*=" icon-"],
-.bootstrap-scope .dropdown-menu > li > a:hover > [class^="icon-"],
-.bootstrap-scope .dropdown-menu > li > a:hover > [class*=" icon-"],
-.bootstrap-scope .dropdown-menu > .active > a > [class^="icon-"],
-.bootstrap-scope .dropdown-menu > .active > a > [class*=" icon-"],
-.bootstrap-scope .dropdown-submenu:hover > a > [class^="icon-"],
-.bootstrap-scope .dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
+.bootstrap-scope a [class^="icon-"],
+.bootstrap-scope a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
 }
 
-.bootstrap-scope .icon-glass {
-  background-position: 0      0;
+.bootstrap-scope .icon-large:before {
+  font-size: 1.3333333333333333em;
+  vertical-align: middle;
 }
 
-.bootstrap-scope .icon-music {
-  background-position: -24px 0;
+.bootstrap-scope .btn [class^="icon-"],
+.bootstrap-scope .nav-tabs [class^="icon-"],
+.bootstrap-scope .btn [class*=" icon-"],
+.bootstrap-scope .nav-tabs [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+
+.bootstrap-scope li [class^="icon-"],
+.bootstrap-scope li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+
+.bootstrap-scope li .icon-large:before,
+.bootstrap-scope li .icon-large:before {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+
+.bootstrap-scope ul.icons {
+  margin-left: 2em;
+  text-indent: -0.8em;
+  list-style-type: none;
+}
+
+.bootstrap-scope ul.icons li [class^="icon-"],
+.bootstrap-scope ul.icons li [class*=" icon-"] {
+  width: .8em;
+}
+
+.bootstrap-scope ul.icons li .icon-large:before,
+.bootstrap-scope ul.icons li .icon-large:before {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  vertical-align: initial;
+}
+
+.bootstrap-scope .icon-glass:before {
+  content: "\f000";
+}
+
+.bootstrap-scope .icon-music:before {
+  content: "\f001";
+}
+
+.bootstrap-scope .icon-search:before {
+  content: "\f002";
+}
+
+.bootstrap-scope .icon-envelope:before {
+  content: "\f003";
+}
+
+.bootstrap-scope .icon-heart:before {
+  content: "\f004";
+}
+
+.bootstrap-scope .icon-star:before {
+  content: "\f005";
+}
+
+.bootstrap-scope .icon-star-empty:before {
+  content: "\f006";
+}
+
+.bootstrap-scope .icon-user:before {
+  content: "\f007";
+}
+
+.bootstrap-scope .icon-film:before {
+  content: "\f008";
+}
+
+.bootstrap-scope .icon-th-large:before {
+  content: "\f009";
+}
+
+.bootstrap-scope .icon-th:before {
+  content: "\f00a";
+}
+
+.bootstrap-scope .icon-th-list:before {
+  content: "\f00b";
+}
+
+.bootstrap-scope .icon-ok:before {
+  content: "\f00c";
+}
+
+.bootstrap-scope .icon-remove:before {
+  content: "\f00d";
+}
+
+.bootstrap-scope .icon-zoom-in:before {
+  content: "\f00e";
+}
+
+.bootstrap-scope .icon-zoom-out:before {
+  content: "\f010";
+}
+
+.bootstrap-scope .icon-off:before {
+  content: "\f011";
+}
+
+.bootstrap-scope .icon-signal:before {
+  content: "\f012";
+}
+
+.bootstrap-scope .icon-cog:before {
+  content: "\f013";
+}
+
+.bootstrap-scope .icon-trash:before {
+  content: "\f014";
+}
+
+.bootstrap-scope .icon-home:before {
+  content: "\f015";
+}
+
+.bootstrap-scope .icon-file:before {
+  content: "\f016";
+}
+
+.bootstrap-scope .icon-time:before {
+  content: "\f017";
+}
+
+.bootstrap-scope .icon-road:before {
+  content: "\f018";
+}
+
+.bootstrap-scope .icon-download-alt:before {
+  content: "\f019";
+}
+
+.bootstrap-scope .icon-download:before {
+  content: "\f01a";
+}
+
+.bootstrap-scope .icon-upload:before {
+  content: "\f01b";
+}
+
+.bootstrap-scope .icon-inbox:before {
+  content: "\f01c";
+}
+
+.bootstrap-scope .icon-play-circle:before {
+  content: "\f01d";
+}
+
+.bootstrap-scope .icon-repeat:before {
+  content: "\f01e";
+}
+
+.bootstrap-scope .icon-refresh:before {
+  content: "\f021";
+}
+
+.bootstrap-scope .icon-list-alt:before {
+  content: "\f022";
+}
+
+.bootstrap-scope .icon-lock:before {
+  content: "\f023";
+}
+
+.bootstrap-scope .icon-flag:before {
+  content: "\f024";
+}
+
+.bootstrap-scope .icon-headphones:before {
+  content: "\f025";
+}
+
+.bootstrap-scope .icon-volume-off:before {
+  content: "\f026";
+}
+
+.bootstrap-scope .icon-volume-down:before {
+  content: "\f027";
+}
+
+.bootstrap-scope .icon-volume-up:before {
+  content: "\f028";
+}
+
+.bootstrap-scope .icon-qrcode:before {
+  content: "\f029";
+}
+
+.bootstrap-scope .icon-barcode:before {
+  content: "\f02a";
+}
+
+.bootstrap-scope .icon-tag:before {
+  content: "\f02b";
+}
+
+.bootstrap-scope .icon-tags:before {
+  content: "\f02c";
+}
+
+.bootstrap-scope .icon-book:before {
+  content: "\f02d";
+}
+
+.bootstrap-scope .icon-bookmark:before {
+  content: "\f02e";
+}
+
+.bootstrap-scope .icon-print:before {
+  content: "\f02f";
+}
+
+.bootstrap-scope .icon-camera:before {
+  content: "\f030";
+}
+
+.bootstrap-scope .icon-font:before {
+  content: "\f031";
+}
+
+.bootstrap-scope .icon-bold:before {
+  content: "\f032";
+}
+
+.bootstrap-scope .icon-italic:before {
+  content: "\f033";
+}
+
+.bootstrap-scope .icon-text-height:before {
+  content: "\f034";
+}
+
+.bootstrap-scope .icon-text-width:before {
+  content: "\f035";
+}
+
+.bootstrap-scope .icon-align-left:before {
+  content: "\f036";
+}
+
+.bootstrap-scope .icon-align-center:before {
+  content: "\f037";
+}
+
+.bootstrap-scope .icon-align-right:before {
+  content: "\f038";
+}
+
+.bootstrap-scope .icon-align-justify:before {
+  content: "\f039";
+}
+
+.bootstrap-scope .icon-list:before {
+  content: "\f03a";
+}
+
+.bootstrap-scope .icon-indent-left:before {
+  content: "\f03b";
+}
+
+.bootstrap-scope .icon-indent-right:before {
+  content: "\f03c";
+}
+
+.bootstrap-scope .icon-facetime-video:before {
+  content: "\f03d";
+}
+
+.bootstrap-scope .icon-picture:before {
+  content: "\f03e";
+}
+
+.bootstrap-scope .icon-pencil:before {
+  content: "\f040";
+}
+
+.bootstrap-scope .icon-map-marker:before {
+  content: "\f041";
+}
+
+.bootstrap-scope .icon-adjust:before {
+  content: "\f042";
+}
+
+.bootstrap-scope .icon-tint:before {
+  content: "\f043";
+}
+
+.bootstrap-scope .icon-edit:before {
+  content: "\f044";
+}
+
+.bootstrap-scope .icon-share:before {
+  content: "\f045";
+}
+
+.bootstrap-scope .icon-check:before {
+  content: "\f046";
+}
+
+.bootstrap-scope .icon-move:before {
+  content: "\f047";
+}
+
+.bootstrap-scope .icon-step-backward:before {
+  content: "\f048";
+}
+
+.bootstrap-scope .icon-fast-backward:before {
+  content: "\f049";
+}
+
+.bootstrap-scope .icon-backward:before {
+  content: "\f04a";
+}
+
+.bootstrap-scope .icon-play:before {
+  content: "\f04b";
 }
 
-.bootstrap-scope .icon-search {
-  background-position: -48px 0;
+.bootstrap-scope .icon-pause:before {
+  content: "\f04c";
 }
 
-.bootstrap-scope .icon-envelope {
-  background-position: -72px 0;
+.bootstrap-scope .icon-stop:before {
+  content: "\f04d";
 }
 
-.bootstrap-scope .icon-heart {
-  background-position: -96px 0;
+.bootstrap-scope .icon-forward:before {
+  content: "\f04e";
 }
 
-.bootstrap-scope .icon-star {
-  background-position: -120px 0;
+.bootstrap-scope .icon-fast-forward:before {
+  content: "\f050";
 }
 
-.bootstrap-scope .icon-star-empty {
-  background-position: -144px 0;
+.bootstrap-scope .icon-step-forward:before {
+  content: "\f051";
 }
 
-.bootstrap-scope .icon-user {
-  background-position: -168px 0;
+.bootstrap-scope .icon-eject:before {
+  content: "\f052";
 }
 
-.bootstrap-scope .icon-film {
-  background-position: -192px 0;
+.bootstrap-scope .icon-chevron-left:before {
+  content: "\f053";
 }
 
-.bootstrap-scope .icon-th-large {
-  background-position: -216px 0;
+.bootstrap-scope .icon-chevron-right:before {
+  content: "\f054";
 }
 
-.bootstrap-scope .icon-th {
-  background-position: -240px 0;
+.bootstrap-scope .icon-plus-sign:before {
+  content: "\f055";
 }
 
-.bootstrap-scope .icon-th-list {
-  background-position: -264px 0;
+.bootstrap-scope .icon-minus-sign:before {
+  content: "\f056";
 }
 
-.bootstrap-scope .icon-ok {
-  background-position: -288px 0;
+.bootstrap-scope .icon-remove-sign:before {
+  content: "\f057";
 }
 
-.bootstrap-scope .icon-remove {
-  background-position: -312px 0;
+.bootstrap-scope .icon-ok-sign:before {
+  content: "\f058";
 }
 
-.bootstrap-scope .icon-zoom-in {
-  background-position: -336px 0;
+.bootstrap-scope .icon-question-sign:before {
+  content: "\f059";
 }
 
-.bootstrap-scope .icon-zoom-out {
-  background-position: -360px 0;
+.bootstrap-scope .icon-info-sign:before {
+  content: "\f05a";
 }
 
-.bootstrap-scope .icon-off {
-  background-position: -384px 0;
+.bootstrap-scope .icon-screenshot:before {
+  content: "\f05b";
 }
 
-.bootstrap-scope .icon-signal {
-  background-position: -408px 0;
+.bootstrap-scope .icon-remove-circle:before {
+  content: "\f05c";
 }
 
-.bootstrap-scope .icon-cog {
-  background-position: -432px 0;
+.bootstrap-scope .icon-ok-circle:before {
+  content: "\f05d";
 }
 
-.bootstrap-scope .icon-trash {
-  background-position: -456px 0;
+.bootstrap-scope .icon-ban-circle:before {
+  content: "\f05e";
 }
 
-.bootstrap-scope .icon-home {
-  background-position: 0 -24px;
+.bootstrap-scope .icon-arrow-left:before {
+  content: "\f060";
 }
 
-.bootstrap-scope .icon-file {
-  background-position: -24px -24px;
+.bootstrap-scope .icon-arrow-right:before {
+  content: "\f061";
 }
 
-.bootstrap-scope .icon-time {
-  background-position: -48px -24px;
+.bootstrap-scope .icon-arrow-up:before {
+  content: "\f062";
 }
 
-.bootstrap-scope .icon-road {
-  background-position: -72px -24px;
+.bootstrap-scope .icon-arrow-down:before {
+  content: "\f063";
 }
 
-.bootstrap-scope .icon-download-alt {
-  background-position: -96px -24px;
+.bootstrap-scope .icon-share-alt:before {
+  content: "\f064";
 }
 
-.bootstrap-scope .icon-download {
-  background-position: -120px -24px;
+.bootstrap-scope .icon-resize-full:before {
+  content: "\f065";
 }
 
-.bootstrap-scope .icon-upload {
-  background-position: -144px -24px;
+.bootstrap-scope .icon-resize-small:before {
+  content: "\f066";
 }
 
-.bootstrap-scope .icon-inbox {
-  background-position: -168px -24px;
+.bootstrap-scope .icon-plus:before {
+  content: "\f067";
 }
 
-.bootstrap-scope .icon-play-circle {
-  background-position: -192px -24px;
+.bootstrap-scope .icon-minus:before {
+  content: "\f068";
 }
 
-.bootstrap-scope .icon-repeat {
-  background-position: -216px -24px;
+.bootstrap-scope .icon-asterisk:before {
+  content: "\f069";
 }
 
-.bootstrap-scope .icon-refresh {
-  background-position: -240px -24px;
+.bootstrap-scope .icon-exclamation-sign:before {
+  content: "\f06a";
 }
 
-.bootstrap-scope .icon-list-alt {
-  background-position: -264px -24px;
+.bootstrap-scope .icon-gift:before {
+  content: "\f06b";
 }
 
-.bootstrap-scope .icon-lock {
-  background-position: -287px -24px;
+.bootstrap-scope .icon-leaf:before {
+  content: "\f06c";
 }
 
-.bootstrap-scope .icon-flag {
-  background-position: -312px -24px;
+.bootstrap-scope .icon-fire:before {
+  content: "\f06d";
 }
 
-.bootstrap-scope .icon-headphones {
-  background-position: -336px -24px;
+.bootstrap-scope .icon-eye-open:before {
+  content: "\f06e";
 }
 
-.bootstrap-scope .icon-volume-off {
-  background-position: -360px -24px;
+.bootstrap-scope .icon-eye-close:before {
+  content: "\f070";
 }
 
-.bootstrap-scope .icon-volume-down {
-  background-position: -384px -24px;
+.bootstrap-scope .icon-warning-sign:before {
+  content: "\f071";
 }
 
-.bootstrap-scope .icon-volume-up {
-  background-position: -408px -24px;
+.bootstrap-scope .icon-plane:before {
+  content: "\f072";
 }
 
-.bootstrap-scope .icon-qrcode {
-  background-position: -432px -24px;
+.bootstrap-scope .icon-calendar:before {
+  content: "\f073";
 }
 
-.bootstrap-scope .icon-barcode {
-  background-position: -456px -24px;
+.bootstrap-scope .icon-random:before {
+  content: "\f074";
 }
 
-.bootstrap-scope .icon-tag {
-  background-position: 0 -48px;
+.bootstrap-scope .icon-comment:before {
+  content: "\f075";
 }
 
-.bootstrap-scope .icon-tags {
-  background-position: -25px -48px;
+.bootstrap-scope .icon-magnet:before {
+  content: "\f076";
 }
 
-.bootstrap-scope .icon-book {
-  background-position: -48px -48px;
+.bootstrap-scope .icon-chevron-up:before {
+  content: "\f077";
 }
 
-.bootstrap-scope .icon-bookmark {
-  background-position: -72px -48px;
+.bootstrap-scope .icon-chevron-down:before {
+  content: "\f078";
 }
 
-.bootstrap-scope .icon-print {
-  background-position: -96px -48px;
+.bootstrap-scope .icon-retweet:before {
+  content: "\f079";
 }
 
-.bootstrap-scope .icon-camera {
-  background-position: -120px -48px;
+.bootstrap-scope .icon-shopping-cart:before {
+  content: "\f07a";
 }
 
-.bootstrap-scope .icon-font {
-  background-position: -144px -48px;
+.bootstrap-scope .icon-folder-close:before {
+  content: "\f07b";
 }
 
-.bootstrap-scope .icon-bold {
-  background-position: -167px -48px;
+.bootstrap-scope .icon-folder-open:before {
+  content: "\f07c";
 }
 
-.bootstrap-scope .icon-italic {
-  background-position: -192px -48px;
+.bootstrap-scope .icon-resize-vertical:before {
+  content: "\f07d";
 }
 
-.bootstrap-scope .icon-text-height {
-  background-position: -216px -48px;
+.bootstrap-scope .icon-resize-horizontal:before {
+  content: "\f07e";
 }
 
-.bootstrap-scope .icon-text-width {
-  background-position: -240px -48px;
+.bootstrap-scope .icon-bar-chart:before {
+  content: "\f080";
 }
 
-.bootstrap-scope .icon-align-left {
-  background-position: -264px -48px;
+.bootstrap-scope .icon-twitter-sign:before {
+  content: "\f081";
 }
 
-.bootstrap-scope .icon-align-center {
-  background-position: -288px -48px;
+.bootstrap-scope .icon-facebook-sign:before {
+  content: "\f082";
 }
 
-.bootstrap-scope .icon-align-right {
-  background-position: -312px -48px;
+.bootstrap-scope .icon-camera-retro:before {
+  content: "\f083";
 }
 
-.bootstrap-scope .icon-align-justify {
-  background-position: -336px -48px;
+.bootstrap-scope .icon-key:before {
+  content: "\f084";
 }
 
-.bootstrap-scope .icon-list {
-  background-position: -360px -48px;
+.bootstrap-scope .icon-cogs:before {
+  content: "\f085";
 }
 
-.bootstrap-scope .icon-indent-left {
-  background-position: -384px -48px;
+.bootstrap-scope .icon-comments:before {
+  content: "\f086";
 }
 
-.bootstrap-scope .icon-indent-right {
-  background-position: -408px -48px;
+.bootstrap-scope .icon-thumbs-up:before {
+  content: "\f087";
 }
 
-.bootstrap-scope .icon-facetime-video {
-  background-position: -432px -48px;
+.bootstrap-scope .icon-thumbs-down:before {
+  content: "\f088";
 }
 
-.bootstrap-scope .icon-picture {
-  background-position: -456px -48px;
+.bootstrap-scope .icon-star-half:before {
+  content: "\f089";
 }
 
-.bootstrap-scope .icon-pencil {
-  background-position: 0 -72px;
+.bootstrap-scope .icon-heart-empty:before {
+  content: "\f08a";
 }
 
-.bootstrap-scope .icon-map-marker {
-  background-position: -24px -72px;
+.bootstrap-scope .icon-signout:before {
+  content: "\f08b";
 }
 
-.bootstrap-scope .icon-adjust {
-  background-position: -48px -72px;
+.bootstrap-scope .icon-linkedin-sign:before {
+  content: "\f08c";
 }
 
-.bootstrap-scope .icon-tint {
-  background-position: -72px -72px;
+.bootstrap-scope .icon-pushpin:before {
+  content: "\f08d";
 }
 
-.bootstrap-scope .icon-edit {
-  background-position: -96px -72px;
+.bootstrap-scope .icon-external-link:before {
+  content: "\f08e";
 }
 
-.bootstrap-scope .icon-share {
-  background-position: -120px -72px;
+.bootstrap-scope .icon-signin:before {
+  content: "\f090";
 }
 
-.bootstrap-scope .icon-check {
-  background-position: -144px -72px;
+.bootstrap-scope .icon-trophy:before {
+  content: "\f091";
 }
 
-.bootstrap-scope .icon-move {
-  background-position: -168px -72px;
+.bootstrap-scope .icon-github-sign:before {
+  content: "\f092";
 }
 
-.bootstrap-scope .icon-step-backward {
-  background-position: -192px -72px;
+.bootstrap-scope .icon-upload-alt:before {
+  content: "\f093";
 }
 
-.bootstrap-scope .icon-fast-backward {
-  background-position: -216px -72px;
+.bootstrap-scope .icon-lemon:before {
+  content: "\f094";
 }
 
-.bootstrap-scope .icon-backward {
-  background-position: -240px -72px;
+.bootstrap-scope .icon-phone:before {
+  content: "\f095";
 }
 
-.bootstrap-scope .icon-play {
-  background-position: -264px -72px;
+.bootstrap-scope .icon-check-empty:before {
+  content: "\f096";
 }
 
-.bootstrap-scope .icon-pause {
-  background-position: -288px -72px;
+.bootstrap-scope .icon-bookmark-empty:before {
+  content: "\f097";
 }
 
-.bootstrap-scope .icon-stop {
-  background-position: -312px -72px;
+.bootstrap-scope .icon-phone-sign:before {
+  content: "\f098";
 }
 
-.bootstrap-scope .icon-forward {
-  background-position: -336px -72px;
+.bootstrap-scope .icon-twitter:before {
+  content: "\f099";
 }
 
-.bootstrap-scope .icon-fast-forward {
-  background-position: -360px -72px;
+.bootstrap-scope .icon-facebook:before {
+  content: "\f09a";
 }
 
-.bootstrap-scope .icon-step-forward {
-  background-position: -384px -72px;
+.bootstrap-scope .icon-github:before {
+  content: "\f09b";
 }
 
-.bootstrap-scope .icon-eject {
-  background-position: -408px -72px;
+.bootstrap-scope .icon-unlock:before {
+  content: "\f09c";
 }
 
-.bootstrap-scope .icon-chevron-left {
-  background-position: -432px -72px;
+.bootstrap-scope .icon-credit-card:before {
+  content: "\f09d";
 }
 
-.bootstrap-scope .icon-chevron-right {
-  background-position: -456px -72px;
+.bootstrap-scope .icon-rss:before {
+  content: "\f09e";
 }
 
-.bootstrap-scope .icon-plus-sign {
-  background-position: 0 -96px;
+.bootstrap-scope .icon-hdd:before {
+  content: "\f0a0";
 }
 
-.bootstrap-scope .icon-minus-sign {
-  background-position: -24px -96px;
+.bootstrap-scope .icon-bullhorn:before {
+  content: "\f0a1";
 }
 
-.bootstrap-scope .icon-remove-sign {
-  background-position: -48px -96px;
+.bootstrap-scope .icon-bell:before {
+  content: "\f0a2";
 }
 
-.bootstrap-scope .icon-ok-sign {
-  background-position: -72px -96px;
+.bootstrap-scope .icon-certificate:before {
+  content: "\f0a3";
 }
 
-.bootstrap-scope .icon-question-sign {
-  background-position: -96px -96px;
+.bootstrap-scope .icon-hand-right:before {
+  content: "\f0a4";
 }
 
-.bootstrap-scope .icon-info-sign {
-  background-position: -120px -96px;
+.bootstrap-scope .icon-hand-left:before {
+  content: "\f0a5";
 }
 
-.bootstrap-scope .icon-screenshot {
-  background-position: -144px -96px;
+.bootstrap-scope .icon-hand-up:before {
+  content: "\f0a6";
 }
 
-.bootstrap-scope .icon-remove-circle {
-  background-position: -168px -96px;
+.bootstrap-scope .icon-hand-down:before {
+  content: "\f0a7";
 }
 
-.bootstrap-scope .icon-ok-circle {
-  background-position: -192px -96px;
+.bootstrap-scope .icon-circle-arrow-left:before {
+  content: "\f0a8";
 }
 
-.bootstrap-scope .icon-ban-circle {
-  background-position: -216px -96px;
+.bootstrap-scope .icon-circle-arrow-right:before {
+  content: "\f0a9";
 }
 
-.bootstrap-scope .icon-arrow-left {
-  background-position: -240px -96px;
+.bootstrap-scope .icon-circle-arrow-up:before {
+  content: "\f0aa";
 }
 
-.bootstrap-scope .icon-arrow-right {
-  background-position: -264px -96px;
+.bootstrap-scope .icon-circle-arrow-down:before {
+  content: "\f0ab";
 }
 
-.bootstrap-scope .icon-arrow-up {
-  background-position: -289px -96px;
+.bootstrap-scope .icon-globe:before {
+  content: "\f0ac";
 }
 
-.bootstrap-scope .icon-arrow-down {
-  background-position: -312px -96px;
+.bootstrap-scope .icon-wrench:before {
+  content: "\f0ad";
 }
 
-.bootstrap-scope .icon-share-alt {
-  background-position: -336px -96px;
+.bootstrap-scope .icon-tasks:before {
+  content: "\f0ae";
 }
 
-.bootstrap-scope .icon-resize-full {
-  background-position: -360px -96px;
+.bootstrap-scope .icon-filter:before {
+  content: "\f0b0";
 }
 
-.bootstrap-scope .icon-resize-small {
-  background-position: -384px -96px;
+.bootstrap-scope .icon-briefcase:before {
+  content: "\f0b1";
 }
 
-.bootstrap-scope .icon-plus {
-  background-position: -408px -96px;
+.bootstrap-scope .icon-fullscreen:before {
+  content: "\f0b2";
 }
 
-.bootstrap-scope .icon-minus {
-  background-position: -433px -96px;
+.bootstrap-scope .icon-group:before {
+  content: "\f0c0";
 }
 
-.bootstrap-scope .icon-asterisk {
-  background-position: -456px -96px;
+.bootstrap-scope .icon-link:before {
+  content: "\f0c1";
 }
 
-.bootstrap-scope .icon-exclamation-sign {
-  background-position: 0 -120px;
+.bootstrap-scope .icon-cloud:before {
+  content: "\f0c2";
 }
 
-.bootstrap-scope .icon-gift {
-  background-position: -24px -120px;
+.bootstrap-scope .icon-beaker:before {
+  content: "\f0c3";
 }
 
-.bootstrap-scope .icon-leaf {
-  background-position: -48px -120px;
+.bootstrap-scope .icon-cut:before {
+  content: "\f0c4";
 }
 
-.bootstrap-scope .icon-fire {
-  background-position: -72px -120px;
+.bootstrap-scope .icon-copy:before {
+  content: "\f0c5";
 }
 
-.bootstrap-scope .icon-eye-open {
-  background-position: -96px -120px;
+.bootstrap-scope .icon-paper-clip:before {
+  content: "\f0c6";
 }
 
-.bootstrap-scope .icon-eye-close {
-  background-position: -120px -120px;
+.bootstrap-scope .icon-save:before {
+  content: "\f0c7";
 }
 
-.bootstrap-scope .icon-warning-sign {
-  background-position: -144px -120px;
+.bootstrap-scope .icon-sign-blank:before {
+  content: "\f0c8";
 }
 
-.bootstrap-scope .icon-plane {
-  background-position: -168px -120px;
+.bootstrap-scope .icon-reorder:before {
+  content: "\f0c9";
 }
 
-.bootstrap-scope .icon-calendar {
-  background-position: -192px -120px;
+.bootstrap-scope .icon-list-ul:before {
+  content: "\f0ca";
 }
 
-.bootstrap-scope .icon-random {
-  width: 16px;
-  background-position: -216px -120px;
+.bootstrap-scope .icon-list-ol:before {
+  content: "\f0cb";
 }
 
-.bootstrap-scope .icon-comment {
-  background-position: -240px -120px;
+.bootstrap-scope .icon-strikethrough:before {
+  content: "\f0cc";
 }
 
-.bootstrap-scope .icon-magnet {
-  background-position: -264px -120px;
+.bootstrap-scope .icon-underline:before {
+  content: "\f0cd";
 }
 
-.bootstrap-scope .icon-chevron-up {
-  background-position: -288px -120px;
+.bootstrap-scope .icon-table:before {
+  content: "\f0ce";
 }
 
-.bootstrap-scope .icon-chevron-down {
-  background-position: -313px -119px;
+.bootstrap-scope .icon-magic:before {
+  content: "\f0d0";
 }
 
-.bootstrap-scope .icon-retweet {
-  background-position: -336px -120px;
+.bootstrap-scope .icon-truck:before {
+  content: "\f0d1";
 }
 
-.bootstrap-scope .icon-shopping-cart {
-  background-position: -360px -120px;
+.bootstrap-scope .icon-pinterest:before {
+  content: "\f0d2";
 }
 
-.bootstrap-scope .icon-folder-close {
-  background-position: -384px -120px;
+.bootstrap-scope .icon-pinterest-sign:before {
+  content: "\f0d3";
 }
 
-.bootstrap-scope .icon-folder-open {
-  width: 16px;
-  background-position: -408px -120px;
+.bootstrap-scope .icon-google-plus-sign:before {
+  content: "\f0d4";
 }
 
-.bootstrap-scope .icon-resize-vertical {
-  background-position: -432px -119px;
+.bootstrap-scope .icon-google-plus:before {
+  content: "\f0d5";
 }
 
-.bootstrap-scope .icon-resize-horizontal {
-  background-position: -456px -118px;
+.bootstrap-scope .icon-money:before {
+  content: "\f0d6";
 }
 
-.bootstrap-scope .icon-hdd {
-  background-position: 0 -144px;
+.bootstrap-scope .icon-caret-down:before {
+  content: "\f0d7";
 }
 
-.bootstrap-scope .icon-bullhorn {
-  background-position: -24px -144px;
+.bootstrap-scope .icon-caret-up:before {
+  content: "\f0d8";
 }
 
-.bootstrap-scope .icon-bell {
-  background-position: -48px -144px;
+.bootstrap-scope .icon-caret-left:before {
+  content: "\f0d9";
 }
 
-.bootstrap-scope .icon-certificate {
-  background-position: -72px -144px;
+.bootstrap-scope .icon-caret-right:before {
+  content: "\f0da";
 }
 
-.bootstrap-scope .icon-thumbs-up {
-  background-position: -96px -144px;
+.bootstrap-scope .icon-columns:before {
+  content: "\f0db";
 }
 
-.bootstrap-scope .icon-thumbs-down {
-  background-position: -120px -144px;
+.bootstrap-scope .icon-sort:before {
+  content: "\f0dc";
 }
 
-.bootstrap-scope .icon-hand-right {
-  background-position: -144px -144px;
+.bootstrap-scope .icon-sort-down:before {
+  content: "\f0dd";
 }
 
-.bootstrap-scope .icon-hand-left {
-  background-position: -168px -144px;
+.bootstrap-scope .icon-sort-up:before {
+  content: "\f0de";
 }
 
-.bootstrap-scope .icon-hand-up {
-  background-position: -192px -144px;
+.bootstrap-scope .icon-envelope-alt:before {
+  content: "\f0e0";
 }
 
-.bootstrap-scope .icon-hand-down {
-  background-position: -216px -144px;
+.bootstrap-scope .icon-linkedin:before {
+  content: "\f0e1";
 }
 
-.bootstrap-scope .icon-circle-arrow-right {
-  background-position: -240px -144px;
+.bootstrap-scope .icon-undo:before {
+  content: "\f0e2";
 }
 
-.bootstrap-scope .icon-circle-arrow-left {
-  background-position: -264px -144px;
+.bootstrap-scope .icon-legal:before {
+  content: "\f0e3";
 }
 
-.bootstrap-scope .icon-circle-arrow-up {
-  background-position: -288px -144px;
+.bootstrap-scope .icon-dashboard:before {
+  content: "\f0e4";
 }
 
-.bootstrap-scope .icon-circle-arrow-down {
-  background-position: -312px -144px;
+.bootstrap-scope .icon-comment-alt:before {
+  content: "\f0e5";
 }
 
-.bootstrap-scope .icon-globe {
-  background-position: -336px -144px;
+.bootstrap-scope .icon-comments-alt:before {
+  content: "\f0e6";
 }
 
-.bootstrap-scope .icon-wrench {
-  background-position: -360px -144px;
+.bootstrap-scope .icon-bolt:before {
+  content: "\f0e7";
 }
 
-.bootstrap-scope .icon-tasks {
-  background-position: -384px -144px;
+.bootstrap-scope .icon-sitemap:before {
+  content: "\f0e8";
 }
 
-.bootstrap-scope .icon-filter {
-  background-position: -408px -144px;
+.bootstrap-scope .icon-umbrella:before {
+  content: "\f0e9";
 }
 
-.bootstrap-scope .icon-briefcase {
-  background-position: -432px -144px;
+.bootstrap-scope .icon-paste:before {
+  content: "\f0ea";
 }
 
-.bootstrap-scope .icon-fullscreen {
-  background-position: -456px -144px;
+.bootstrap-scope .icon-user-md:before {
+  content: "\f200";
 }
 
 .bootstrap-scope .dropup,

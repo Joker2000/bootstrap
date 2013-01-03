@@ -8,14 +8,16 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+@import "not-scoped.less";
+
 .bootstrap-scope {
 
 	// CSS Reset
 	@import "reset.less";
-
-	// Core variables and mixins
-	@import "variables.less"; // Modify this for custom colors, font-sizes, etc
-	@import "mixins.less";
 
 	// Grid system and page structure
 	@import "scaffolding.less";
@@ -29,7 +31,7 @@
 	@import "tables.less";
 
 	// Components: common
-	@import "sprites.less";
+	@import "font-awesome.less";
 	@import "dropdowns.less";
 	@import "wells.less";
 	@import "component-animations.less";
