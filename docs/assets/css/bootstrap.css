@@ -52,40 +52,6 @@ body {
 .bootstrap-scope {
   /* Allow for input prepend/append in search forms */
 
-  /*  Font Awesome
-    the iconic font designed for use with Twitter Bootstrap
-    -------------------------------------------------------
-    The full suite of pictographic icons, examples, and documentation
-    can be found at: http://fortawesome.github.com/Font-Awesome/
-
-    License
-    -------------------------------------------------------
-    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
-    http://creativecommons.org/licenses/by/3.0/ A mention of
-    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
-    source code is considered acceptable attribution (most common on the web).
-    If human readable source code is not available to the end user, a mention in
-    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
-    or mobile software).
-
-    Contact
-    -------------------------------------------------------
-    Email: dave@davegandy.com
-    Twitter: http://twitter.com/fortaweso_me
-    Work: Lead Product Designer @ http://kyruus.com
-
-    */
-
-  /*  Font Awesome styles
-    ------------------------------------------------------- */
-
-  /* makes the font 33% larger relative to the icon container */
-
-  /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-    readers do not read off random characters that represent icons */
-
-  /* \f020 doesn't work in Safari. all shifted one down */
-
   /* move down carets for tabs */
 
 }
@@ -2289,1198 +2255,6 @@ textarea.span1,
 
 .bootstrap-scope .table-hover tbody tr.info:hover td {
   background-color: #c4e3f3;
-}
-
-@font-face {
-  font-family: 'FontAwesome';
-  font-style: normal;
-  font-weight: normal;
-  src: url('../font/fontawesome-webfont.eot');
-  src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
-}
-
-.bootstrap-scope [class^="icon-"]:before,
-.bootstrap-scope [class*=" icon-"]:before {
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-}
-
-.bootstrap-scope a [class^="icon-"],
-.bootstrap-scope a [class*=" icon-"] {
-  display: inline-block;
-  text-decoration: inherit;
-}
-
-.bootstrap-scope .icon-large:before {
-  font-size: 1.3333333333333333em;
-  vertical-align: middle;
-}
-
-.bootstrap-scope .btn [class^="icon-"],
-.bootstrap-scope .nav-tabs [class^="icon-"],
-.bootstrap-scope .btn [class*=" icon-"],
-.bootstrap-scope .nav-tabs [class*=" icon-"] {
-  /* keeps button heights with and without icons the same */
-
-  line-height: .9em;
-}
-
-.bootstrap-scope li [class^="icon-"],
-.bootstrap-scope li [class*=" icon-"] {
-  display: inline-block;
-  width: 1.25em;
-  text-align: center;
-}
-
-.bootstrap-scope li .icon-large:before,
-.bootstrap-scope li .icon-large:before {
-  /* 1.5 increased font size for icon-large * 1.25 width */
-
-  width: 1.875em;
-}
-
-.bootstrap-scope ul.icons {
-  margin-left: 2em;
-  text-indent: -0.8em;
-  list-style-type: none;
-}
-
-.bootstrap-scope ul.icons li [class^="icon-"],
-.bootstrap-scope ul.icons li [class*=" icon-"] {
-  width: .8em;
-}
-
-.bootstrap-scope ul.icons li .icon-large:before,
-.bootstrap-scope ul.icons li .icon-large:before {
-  /* 1.5 increased font size for icon-large * 1.25 width */
-
-  vertical-align: initial;
-}
-
-.bootstrap-scope .icon-glass:before {
-  content: "\f000";
-}
-
-.bootstrap-scope .icon-music:before {
-  content: "\f001";
-}
-
-.bootstrap-scope .icon-search:before {
-  content: "\f002";
-}
-
-.bootstrap-scope .icon-envelope:before {
-  content: "\f003";
-}
-
-.bootstrap-scope .icon-heart:before {
-  content: "\f004";
-}
-
-.bootstrap-scope .icon-star:before {
-  content: "\f005";
-}
-
-.bootstrap-scope .icon-star-empty:before {
-  content: "\f006";
-}
-
-.bootstrap-scope .icon-user:before {
-  content: "\f007";
-}
-
-.bootstrap-scope .icon-film:before {
-  content: "\f008";
-}
-
-.bootstrap-scope .icon-th-large:before {
-  content: "\f009";
-}
-
-.bootstrap-scope .icon-th:before {
-  content: "\f00a";
-}
-
-.bootstrap-scope .icon-th-list:before {
-  content: "\f00b";
-}
-
-.bootstrap-scope .icon-ok:before {
-  content: "\f00c";
-}
-
-.bootstrap-scope .icon-remove:before {
-  content: "\f00d";
-}
-
-.bootstrap-scope .icon-zoom-in:before {
-  content: "\f00e";
-}
-
-.bootstrap-scope .icon-zoom-out:before {
-  content: "\f010";
-}
-
-.bootstrap-scope .icon-off:before {
-  content: "\f011";
-}
-
-.bootstrap-scope .icon-signal:before {
-  content: "\f012";
-}
-
-.bootstrap-scope .icon-cog:before {
-  content: "\f013";
-}
-
-.bootstrap-scope .icon-trash:before {
-  content: "\f014";
-}
-
-.bootstrap-scope .icon-home:before {
-  content: "\f015";
-}
-
-.bootstrap-scope .icon-file:before {
-  content: "\f016";
-}
-
-.bootstrap-scope .icon-time:before {
-  content: "\f017";
-}
-
-.bootstrap-scope .icon-road:before {
-  content: "\f018";
-}
-
-.bootstrap-scope .icon-download-alt:before {
-  content: "\f019";
-}
-
-.bootstrap-scope .icon-download:before {
-  content: "\f01a";
-}
-
-.bootstrap-scope .icon-upload:before {
-  content: "\f01b";
-}
-
-.bootstrap-scope .icon-inbox:before {
-  content: "\f01c";
-}
-
-.bootstrap-scope .icon-play-circle:before {
-  content: "\f01d";
-}
-
-.bootstrap-scope .icon-repeat:before {
-  content: "\f01e";
-}
-
-.bootstrap-scope .icon-refresh:before {
-  content: "\f021";
-}
-
-.bootstrap-scope .icon-list-alt:before {
-  content: "\f022";
-}
-
-.bootstrap-scope .icon-lock:before {
-  content: "\f023";
-}
-
-.bootstrap-scope .icon-flag:before {
-  content: "\f024";
-}
-
-.bootstrap-scope .icon-headphones:before {
-  content: "\f025";
-}
-
-.bootstrap-scope .icon-volume-off:before {
-  content: "\f026";
-}
-
-.bootstrap-scope .icon-volume-down:before {
-  content: "\f027";
-}
-
-.bootstrap-scope .icon-volume-up:before {
-  content: "\f028";
-}
-
-.bootstrap-scope .icon-qrcode:before {
-  content: "\f029";
-}
-
-.bootstrap-scope .icon-barcode:before {
-  content: "\f02a";
-}
-
-.bootstrap-scope .icon-tag:before {
-  content: "\f02b";
-}
-
-.bootstrap-scope .icon-tags:before {
-  content: "\f02c";
-}
-
-.bootstrap-scope .icon-book:before {
-  content: "\f02d";
-}
-
-.bootstrap-scope .icon-bookmark:before {
-  content: "\f02e";
-}
-
-.bootstrap-scope .icon-print:before {
-  content: "\f02f";
-}
-
-.bootstrap-scope .icon-camera:before {
-  content: "\f030";
-}
-
-.bootstrap-scope .icon-font:before {
-  content: "\f031";
-}
-
-.bootstrap-scope .icon-bold:before {
-  content: "\f032";
-}
-
-.bootstrap-scope .icon-italic:before {
-  content: "\f033";
-}
-
-.bootstrap-scope .icon-text-height:before {
-  content: "\f034";
-}
-
-.bootstrap-scope .icon-text-width:before {
-  content: "\f035";
-}
-
-.bootstrap-scope .icon-align-left:before {
-  content: "\f036";
-}
-
-.bootstrap-scope .icon-align-center:before {
-  content: "\f037";
-}
-
-.bootstrap-scope .icon-align-right:before {
-  content: "\f038";
-}
-
-.bootstrap-scope .icon-align-justify:before {
-  content: "\f039";
-}
-
-.bootstrap-scope .icon-list:before {
-  content: "\f03a";
-}
-
-.bootstrap-scope .icon-indent-left:before {
-  content: "\f03b";
-}
-
-.bootstrap-scope .icon-indent-right:before {
-  content: "\f03c";
-}
-
-.bootstrap-scope .icon-facetime-video:before {
-  content: "\f03d";
-}
-
-.bootstrap-scope .icon-picture:before {
-  content: "\f03e";
-}
-
-.bootstrap-scope .icon-pencil:before {
-  content: "\f040";
-}
-
-.bootstrap-scope .icon-map-marker:before {
-  content: "\f041";
-}
-
-.bootstrap-scope .icon-adjust:before {
-  content: "\f042";
-}
-
-.bootstrap-scope .icon-tint:before {
-  content: "\f043";
-}
-
-.bootstrap-scope .icon-edit:before {
-  content: "\f044";
-}
-
-.bootstrap-scope .icon-share:before {
-  content: "\f045";
-}
-
-.bootstrap-scope .icon-check:before {
-  content: "\f046";
-}
-
-.bootstrap-scope .icon-move:before {
-  content: "\f047";
-}
-
-.bootstrap-scope .icon-step-backward:before {
-  content: "\f048";
-}
-
-.bootstrap-scope .icon-fast-backward:before {
-  content: "\f049";
-}
-
-.bootstrap-scope .icon-backward:before {
-  content: "\f04a";
-}
-
-.bootstrap-scope .icon-play:before {
-  content: "\f04b";
-}
-
-.bootstrap-scope .icon-pause:before {
-  content: "\f04c";
-}
-
-.bootstrap-scope .icon-stop:before {
-  content: "\f04d";
-}
-
-.bootstrap-scope .icon-forward:before {
-  content: "\f04e";
-}
-
-.bootstrap-scope .icon-fast-forward:before {
-  content: "\f050";
-}
-
-.bootstrap-scope .icon-step-forward:before {
-  content: "\f051";
-}
-
-.bootstrap-scope .icon-eject:before {
-  content: "\f052";
-}
-
-.bootstrap-scope .icon-chevron-left:before {
-  content: "\f053";
-}
-
-.bootstrap-scope .icon-chevron-right:before {
-  content: "\f054";
-}
-
-.bootstrap-scope .icon-plus-sign:before {
-  content: "\f055";
-}
-
-.bootstrap-scope .icon-minus-sign:before {
-  content: "\f056";
-}
-
-.bootstrap-scope .icon-remove-sign:before {
-  content: "\f057";
-}
-
-.bootstrap-scope .icon-ok-sign:before {
-  content: "\f058";
-}
-
-.bootstrap-scope .icon-question-sign:before {
-  content: "\f059";
-}
-
-.bootstrap-scope .icon-info-sign:before {
-  content: "\f05a";
-}
-
-.bootstrap-scope .icon-screenshot:before {
-  content: "\f05b";
-}
-
-.bootstrap-scope .icon-remove-circle:before {
-  content: "\f05c";
-}
-
-.bootstrap-scope .icon-ok-circle:before {
-  content: "\f05d";
-}
-
-.bootstrap-scope .icon-ban-circle:before {
-  content: "\f05e";
-}
-
-.bootstrap-scope .icon-arrow-left:before {
-  content: "\f060";
-}
-
-.bootstrap-scope .icon-arrow-right:before {
-  content: "\f061";
-}
-
-.bootstrap-scope .icon-arrow-up:before {
-  content: "\f062";
-}
-
-.bootstrap-scope .icon-arrow-down:before {
-  content: "\f063";
-}
-
-.bootstrap-scope .icon-share-alt:before {
-  content: "\f064";
-}
-
-.bootstrap-scope .icon-resize-full:before {
-  content: "\f065";
-}
-
-.bootstrap-scope .icon-resize-small:before {
-  content: "\f066";
-}
-
-.bootstrap-scope .icon-plus:before {
-  content: "\f067";
-}
-
-.bootstrap-scope .icon-minus:before {
-  content: "\f068";
-}
-
-.bootstrap-scope .icon-asterisk:before {
-  content: "\f069";
-}
-
-.bootstrap-scope .icon-exclamation-sign:before {
-  content: "\f06a";
-}
-
-.bootstrap-scope .icon-gift:before {
-  content: "\f06b";
-}
-
-.bootstrap-scope .icon-leaf:before {
-  content: "\f06c";
-}
-
-.bootstrap-scope .icon-fire:before {
-  content: "\f06d";
-}
-
-.bootstrap-scope .icon-eye-open:before {
-  content: "\f06e";
-}
-
-.bootstrap-scope .icon-eye-close:before {
-  content: "\f070";
-}
-
-.bootstrap-scope .icon-warning-sign:before {
-  content: "\f071";
-}
-
-.bootstrap-scope .icon-plane:before {
-  content: "\f072";
-}
-
-.bootstrap-scope .icon-calendar:before {
-  content: "\f073";
-}
-
-.bootstrap-scope .icon-random:before {
-  content: "\f074";
-}
-
-.bootstrap-scope .icon-comment:before {
-  content: "\f075";
-}
-
-.bootstrap-scope .icon-magnet:before {
-  content: "\f076";
-}
-
-.bootstrap-scope .icon-chevron-up:before {
-  content: "\f077";
-}
-
-.bootstrap-scope .icon-chevron-down:before {
-  content: "\f078";
-}
-
-.bootstrap-scope .icon-retweet:before {
-  content: "\f079";
-}
-
-.bootstrap-scope .icon-shopping-cart:before {
-  content: "\f07a";
-}
-
-.bootstrap-scope .icon-folder-close:before {
-  content: "\f07b";
-}
-
-.bootstrap-scope .icon-folder-open:before {
-  content: "\f07c";
-}
-
-.bootstrap-scope .icon-resize-vertical:before {
-  content: "\f07d";
-}
-
-.bootstrap-scope .icon-resize-horizontal:before {
-  content: "\f07e";
-}
-
-.bootstrap-scope .icon-bar-chart:before {
-  content: "\f080";
-}
-
-.bootstrap-scope .icon-twitter-sign:before {
-  content: "\f081";
-}
-
-.bootstrap-scope .icon-facebook-sign:before {
-  content: "\f082";
-}
-
-.bootstrap-scope .icon-camera-retro:before {
-  content: "\f083";
-}
-
-.bootstrap-scope .icon-key:before {
-  content: "\f084";
-}
-
-.bootstrap-scope .icon-cogs:before {
-  content: "\f085";
-}
-
-.bootstrap-scope .icon-comments:before {
-  content: "\f086";
-}
-
-.bootstrap-scope .icon-thumbs-up:before {
-  content: "\f087";
-}
-
-.bootstrap-scope .icon-thumbs-down:before {
-  content: "\f088";
-}
-
-.bootstrap-scope .icon-star-half:before {
-  content: "\f089";
-}
-
-.bootstrap-scope .icon-heart-empty:before {
-  content: "\f08a";
-}
-
-.bootstrap-scope .icon-signout:before {
-  content: "\f08b";
-}
-
-.bootstrap-scope .icon-linkedin-sign:before {
-  content: "\f08c";
-}
-
-.bootstrap-scope .icon-pushpin:before {
-  content: "\f08d";
-}
-
-.bootstrap-scope .icon-external-link:before {
-  content: "\f08e";
-}
-
-.bootstrap-scope .icon-signin:before {
-  content: "\f090";
-}
-
-.bootstrap-scope .icon-trophy:before {
-  content: "\f091";
-}
-
-.bootstrap-scope .icon-github-sign:before {
-  content: "\f092";
-}
-
-.bootstrap-scope .icon-upload-alt:before {
-  content: "\f093";
-}
-
-.bootstrap-scope .icon-lemon:before {
-  content: "\f094";
-}
-
-.bootstrap-scope .icon-phone:before {
-  content: "\f095";
-}
-
-.bootstrap-scope .icon-check-empty:before {
-  content: "\f096";
-}
-
-.bootstrap-scope .icon-bookmark-empty:before {
-  content: "\f097";
-}
-
-.bootstrap-scope .icon-phone-sign:before {
-  content: "\f098";
-}
-
-.bootstrap-scope .icon-twitter:before {
-  content: "\f099";
-}
-
-.bootstrap-scope .icon-facebook:before {
-  content: "\f09a";
-}
-
-.bootstrap-scope .icon-github:before {
-  content: "\f09b";
-}
-
-.bootstrap-scope .icon-unlock:before {
-  content: "\f09c";
-}
-
-.bootstrap-scope .icon-credit-card:before {
-  content: "\f09d";
-}
-
-.bootstrap-scope .icon-rss:before {
-  content: "\f09e";
-}
-
-.bootstrap-scope .icon-hdd:before {
-  content: "\f0a0";
-}
-
-.bootstrap-scope .icon-bullhorn:before {
-  content: "\f0a1";
-}
-
-.bootstrap-scope .icon-bell:before {
-  content: "\f0a2";
-}
-
-.bootstrap-scope .icon-certificate:before {
-  content: "\f0a3";
-}
-
-.bootstrap-scope .icon-hand-right:before {
-  content: "\f0a4";
-}
-
-.bootstrap-scope .icon-hand-left:before {
-  content: "\f0a5";
-}
-
-.bootstrap-scope .icon-hand-up:before {
-  content: "\f0a6";
-}
-
-.bootstrap-scope .icon-hand-down:before {
-  content: "\f0a7";
-}
-
-.bootstrap-scope .icon-circle-arrow-left:before {
-  content: "\f0a8";
-}
-
-.bootstrap-scope .icon-circle-arrow-right:before {
-  content: "\f0a9";
-}
-
-.bootstrap-scope .icon-circle-arrow-up:before {
-  content: "\f0aa";
-}
-
-.bootstrap-scope .icon-circle-arrow-down:before {
-  content: "\f0ab";
-}
-
-.bootstrap-scope .icon-globe:before {
-  content: "\f0ac";
-}
-
-.bootstrap-scope .icon-wrench:before {
-  content: "\f0ad";
-}
-
-.bootstrap-scope .icon-tasks:before {
-  content: "\f0ae";
-}
-
-.bootstrap-scope .icon-filter:before {
-  content: "\f0b0";
-}
-
-.bootstrap-scope .icon-briefcase:before {
-  content: "\f0b1";
-}
-
-.bootstrap-scope .icon-fullscreen:before {
-  content: "\f0b2";
-}
-
-.bootstrap-scope .icon-group:before {
-  content: "\f0c0";
-}
-
-.bootstrap-scope .icon-link:before {
-  content: "\f0c1";
-}
-
-.bootstrap-scope .icon-cloud:before {
-  content: "\f0c2";
-}
-
-.bootstrap-scope .icon-beaker:before {
-  content: "\f0c3";
-}
-
-.bootstrap-scope .icon-cut:before {
-  content: "\f0c4";
-}
-
-.bootstrap-scope .icon-copy:before {
-  content: "\f0c5";
-}
-
-.bootstrap-scope .icon-paper-clip:before {
-  content: "\f0c6";
-}
-
-.bootstrap-scope .icon-save:before {
-  content: "\f0c7";
-}
-
-.bootstrap-scope .icon-sign-blank:before {
-  content: "\f0c8";
-}
-
-.bootstrap-scope .icon-reorder:before {
-  content: "\f0c9";
-}
-
-.bootstrap-scope .icon-list-ul:before {
-  content: "\f0ca";
-}
-
-.bootstrap-scope .icon-list-ol:before {
-  content: "\f0cb";
-}
-
-.bootstrap-scope .icon-strikethrough:before {
-  content: "\f0cc";
-}
-
-.bootstrap-scope .icon-underline:before {
-  content: "\f0cd";
-}
-
-.bootstrap-scope .icon-table:before {
-  content: "\f0ce";
-}
-
-.bootstrap-scope .icon-magic:before {
-  content: "\f0d0";
-}
-
-.bootstrap-scope .icon-truck:before {
-  content: "\f0d1";
-}
-
-.bootstrap-scope .icon-pinterest:before {
-  content: "\f0d2";
-}
-
-.bootstrap-scope .icon-pinterest-sign:before {
-  content: "\f0d3";
-}
-
-.bootstrap-scope .icon-google-plus-sign:before {
-  content: "\f0d4";
-}
-
-.bootstrap-scope .icon-google-plus:before {
-  content: "\f0d5";
-}
-
-.bootstrap-scope .icon-money:before {
-  content: "\f0d6";
-}
-
-.bootstrap-scope .icon-caret-down:before {
-  content: "\f0d7";
-}
-
-.bootstrap-scope .icon-caret-up:before {
-  content: "\f0d8";
-}
-
-.bootstrap-scope .icon-caret-left:before {
-  content: "\f0d9";
-}
-
-.bootstrap-scope .icon-caret-right:before {
-  content: "\f0da";
-}
-
-.bootstrap-scope .icon-columns:before {
-  content: "\f0db";
-}
-
-.bootstrap-scope .icon-sort:before {
-  content: "\f0dc";
-}
-
-.bootstrap-scope .icon-sort-down:before {
-  content: "\f0dd";
-}
-
-.bootstrap-scope .icon-sort-up:before {
-  content: "\f0de";
-}
-
-.bootstrap-scope .icon-envelope-alt:before {
-  content: "\f0e0";
-}
-
-.bootstrap-scope .icon-linkedin:before {
-  content: "\f0e1";
-}
-
-.bootstrap-scope .icon-undo:before {
-  content: "\f0e2";
-}
-
-.bootstrap-scope .icon-legal:before {
-  content: "\f0e3";
-}
-
-.bootstrap-scope .icon-dashboard:before {
-  content: "\f0e4";
-}
-
-.bootstrap-scope .icon-comment-alt:before {
-  content: "\f0e5";
-}
-
-.bootstrap-scope .icon-comments-alt:before {
-  content: "\f0e6";
-}
-
-.bootstrap-scope .icon-bolt:before {
-  content: "\f0e7";
-}
-
-.bootstrap-scope .icon-sitemap:before {
-  content: "\f0e8";
-}
-
-.bootstrap-scope .icon-umbrella:before {
-  content: "\f0e9";
-}
-
-.bootstrap-scope .icon-paste:before {
-  content: "\f0ea";
-}
-
-.bootstrap-scope .icon-user-md:before {
-  content: "\f200";
-}
-
-.bootstrap-scope .dropup,
-.bootstrap-scope .dropdown {
-  position: relative;
-}
-
-.bootstrap-scope .dropdown-toggle {
-  *margin-bottom: -3px;
-}
-
-.bootstrap-scope .dropdown-toggle:active,
-.bootstrap-scope .open .dropdown-toggle {
-  outline: 0;
-}
-
-.bootstrap-scope .caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  vertical-align: top;
-  border-top: 4px solid #000000;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-  content: "";
-}
-
-.bootstrap-scope .dropdown .caret {
-  margin-top: 8px;
-  margin-left: 2px;
-}
-
-.bootstrap-scope .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
-  list-style: none;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding;
-          background-clip: padding-box;
-}
-
-.bootstrap-scope .dropdown-menu.pull-right {
-  right: 0;
-  left: auto;
-}
-
-.bootstrap-scope .dropdown-menu .divider {
-  *width: 100%;
-  height: 1px;
-  margin: 9px 1px;
-  *margin: -5px 0 5px;
-  overflow: hidden;
-  background-color: #e5e5e5;
-  border-bottom: 1px solid #ffffff;
-}
-
-.bootstrap-scope .dropdown-menu li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 20px;
-  color: #333333;
-  white-space: nowrap;
-}
-
-.bootstrap-scope .dropdown-menu li > a:hover,
-.bootstrap-scope .dropdown-menu li > a:focus,
-.bootstrap-scope .dropdown-submenu:hover > a {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
-}
-
-.bootstrap-scope .dropdown-menu .active > a,
-.bootstrap-scope .dropdown-menu .active > a:hover {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
-  background-repeat: repeat-x;
-  outline: 0;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
-}
-
-.bootstrap-scope .dropdown-menu .disabled > a,
-.bootstrap-scope .dropdown-menu .disabled > a:hover {
-  color: #999999;
-}
-
-.bootstrap-scope .dropdown-menu .disabled > a:hover {
-  text-decoration: none;
-  cursor: default;
-  background-color: transparent;
-  background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-
-.bootstrap-scope .open {
-  *z-index: 1000;
-}
-
-.bootstrap-scope .open > .dropdown-menu {
-  display: block;
-}
-
-.bootstrap-scope .pull-right > .dropdown-menu {
-  right: 0;
-  left: auto;
-}
-
-.bootstrap-scope .dropup .caret,
-.bootstrap-scope .navbar-fixed-bottom .dropdown .caret {
-  border-top: 0;
-  border-bottom: 4px solid #000000;
-  content: "";
-}
-
-.bootstrap-scope .dropup .dropdown-menu,
-.bootstrap-scope .navbar-fixed-bottom .dropdown .dropdown-menu {
-  top: auto;
-  bottom: 100%;
-  margin-bottom: 1px;
-}
-
-.bootstrap-scope .dropdown-submenu {
-  position: relative;
-}
-
-.bootstrap-scope .dropdown-submenu > .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  -webkit-border-radius: 0 6px 6px 6px;
-     -moz-border-radius: 0 6px 6px 6px;
-          border-radius: 0 6px 6px 6px;
-}
-
-.bootstrap-scope .dropdown-submenu:hover > .dropdown-menu {
-  display: block;
-}
-
-.bootstrap-scope .dropup .dropdown-submenu > .dropdown-menu {
-  top: auto;
-  bottom: 0;
-  margin-top: 0;
-  margin-bottom: -2px;
-  -webkit-border-radius: 5px 5px 5px 0;
-     -moz-border-radius: 5px 5px 5px 0;
-          border-radius: 5px 5px 5px 0;
-}
-
-.bootstrap-scope .dropdown-submenu > a:after {
-  display: block;
-  float: right;
-  width: 0;
-  height: 0;
-  margin-top: 5px;
-  margin-right: -10px;
-  border-color: transparent;
-  border-left-color: #cccccc;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  content: " ";
-}
-
-.bootstrap-scope .dropdown-submenu:hover > a:after {
-  border-left-color: #ffffff;
-}
-
-.bootstrap-scope .dropdown-submenu.pull-left {
-  float: none;
-}
-
-.bootstrap-scope .dropdown-submenu.pull-left > .dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-     -moz-border-radius: 6px 0 6px 6px;
-          border-radius: 6px 0 6px 6px;
-}
-
-.bootstrap-scope .dropdown .dropdown-menu .nav-header {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.bootstrap-scope .typeahead {
-  z-index: 1051;
-  margin-top: 2px;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-
-.bootstrap-scope .well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-}
-
-.bootstrap-scope .well blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-
-.bootstrap-scope .well-large {
-  padding: 24px;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-}
-
-.bootstrap-scope .well-small {
-  padding: 9px;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-}
-
-.bootstrap-scope .close {
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 20px;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-}
-
-.bootstrap-scope .close:hover {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-}
-
-.bootstrap-scope button.close {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
 }
 
 .bootstrap-scope .btn {
@@ -6006,6 +4780,1205 @@ textarea.span1,
   line-height: 30px;
 }
 
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: Lead Product Designer @ http://kyruus.com
+
+    */
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/fontawesome-webfont.eot');
+  src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+a [class^="icon-"],
+a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* makes the font 33% larger relative to the icon container */
+
+.icon-large:before {
+  font-size: 1.3333333333333333em;
+  vertical-align: middle;
+}
+
+.btn [class^="icon-"],
+.nav-tabs [class^="icon-"],
+.btn [class*=" icon-"],
+.nav-tabs [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+
+li [class^="icon-"],
+li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+
+li .icon-large:before,
+li .icon-large:before {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+
+ul.icons {
+  margin-left: 2em;
+  text-indent: -0.8em;
+  list-style-type: none;
+}
+
+ul.icons li [class^="icon-"],
+ul.icons li [class*=" icon-"] {
+  width: .8em;
+}
+
+ul.icons li .icon-large:before,
+ul.icons li .icon-large:before {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  vertical-align: initial;
+}
+
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+
+.icon-glass:before {
+  content: "\f000";
+}
+
+.icon-music:before {
+  content: "\f001";
+}
+
+.icon-search:before {
+  content: "\f002";
+}
+
+.icon-envelope:before {
+  content: "\f003";
+}
+
+.icon-heart:before {
+  content: "\f004";
+}
+
+.icon-star:before {
+  content: "\f005";
+}
+
+.icon-star-empty:before {
+  content: "\f006";
+}
+
+.icon-user:before {
+  content: "\f007";
+}
+
+.icon-film:before {
+  content: "\f008";
+}
+
+.icon-th-large:before {
+  content: "\f009";
+}
+
+.icon-th:before {
+  content: "\f00a";
+}
+
+.icon-th-list:before {
+  content: "\f00b";
+}
+
+.icon-ok:before {
+  content: "\f00c";
+}
+
+.icon-remove:before {
+  content: "\f00d";
+}
+
+.icon-zoom-in:before {
+  content: "\f00e";
+}
+
+.icon-zoom-out:before {
+  content: "\f010";
+}
+
+.icon-off:before {
+  content: "\f011";
+}
+
+.icon-signal:before {
+  content: "\f012";
+}
+
+.icon-cog:before {
+  content: "\f013";
+}
+
+.icon-trash:before {
+  content: "\f014";
+}
+
+.icon-home:before {
+  content: "\f015";
+}
+
+.icon-file:before {
+  content: "\f016";
+}
+
+.icon-time:before {
+  content: "\f017";
+}
+
+.icon-road:before {
+  content: "\f018";
+}
+
+.icon-download-alt:before {
+  content: "\f019";
+}
+
+.icon-download:before {
+  content: "\f01a";
+}
+
+.icon-upload:before {
+  content: "\f01b";
+}
+
+.icon-inbox:before {
+  content: "\f01c";
+}
+
+.icon-play-circle:before {
+  content: "\f01d";
+}
+
+.icon-repeat:before {
+  content: "\f01e";
+}
+
+/* \f020 doesn't work in Safari. all shifted one down */
+
+.icon-refresh:before {
+  content: "\f021";
+}
+
+.icon-list-alt:before {
+  content: "\f022";
+}
+
+.icon-lock:before {
+  content: "\f023";
+}
+
+.icon-flag:before {
+  content: "\f024";
+}
+
+.icon-headphones:before {
+  content: "\f025";
+}
+
+.icon-volume-off:before {
+  content: "\f026";
+}
+
+.icon-volume-down:before {
+  content: "\f027";
+}
+
+.icon-volume-up:before {
+  content: "\f028";
+}
+
+.icon-qrcode:before {
+  content: "\f029";
+}
+
+.icon-barcode:before {
+  content: "\f02a";
+}
+
+.icon-tag:before {
+  content: "\f02b";
+}
+
+.icon-tags:before {
+  content: "\f02c";
+}
+
+.icon-book:before {
+  content: "\f02d";
+}
+
+.icon-bookmark:before {
+  content: "\f02e";
+}
+
+.icon-print:before {
+  content: "\f02f";
+}
+
+.icon-camera:before {
+  content: "\f030";
+}
+
+.icon-font:before {
+  content: "\f031";
+}
+
+.icon-bold:before {
+  content: "\f032";
+}
+
+.icon-italic:before {
+  content: "\f033";
+}
+
+.icon-text-height:before {
+  content: "\f034";
+}
+
+.icon-text-width:before {
+  content: "\f035";
+}
+
+.icon-align-left:before {
+  content: "\f036";
+}
+
+.icon-align-center:before {
+  content: "\f037";
+}
+
+.icon-align-right:before {
+  content: "\f038";
+}
+
+.icon-align-justify:before {
+  content: "\f039";
+}
+
+.icon-list:before {
+  content: "\f03a";
+}
+
+.icon-indent-left:before {
+  content: "\f03b";
+}
+
+.icon-indent-right:before {
+  content: "\f03c";
+}
+
+.icon-facetime-video:before {
+  content: "\f03d";
+}
+
+.icon-picture:before {
+  content: "\f03e";
+}
+
+.icon-pencil:before {
+  content: "\f040";
+}
+
+.icon-map-marker:before {
+  content: "\f041";
+}
+
+.icon-adjust:before {
+  content: "\f042";
+}
+
+.icon-tint:before {
+  content: "\f043";
+}
+
+.icon-edit:before {
+  content: "\f044";
+}
+
+.icon-share:before {
+  content: "\f045";
+}
+
+.icon-check:before {
+  content: "\f046";
+}
+
+.icon-move:before {
+  content: "\f047";
+}
+
+.icon-step-backward:before {
+  content: "\f048";
+}
+
+.icon-fast-backward:before {
+  content: "\f049";
+}
+
+.icon-backward:before {
+  content: "\f04a";
+}
+
+.icon-play:before {
+  content: "\f04b";
+}
+
+.icon-pause:before {
+  content: "\f04c";
+}
+
+.icon-stop:before {
+  content: "\f04d";
+}
+
+.icon-forward:before {
+  content: "\f04e";
+}
+
+.icon-fast-forward:before {
+  content: "\f050";
+}
+
+.icon-step-forward:before {
+  content: "\f051";
+}
+
+.icon-eject:before {
+  content: "\f052";
+}
+
+.icon-chevron-left:before {
+  content: "\f053";
+}
+
+.icon-chevron-right:before {
+  content: "\f054";
+}
+
+.icon-plus-sign:before {
+  content: "\f055";
+}
+
+.icon-minus-sign:before {
+  content: "\f056";
+}
+
+.icon-remove-sign:before {
+  content: "\f057";
+}
+
+.icon-ok-sign:before {
+  content: "\f058";
+}
+
+.icon-question-sign:before {
+  content: "\f059";
+}
+
+.icon-info-sign:before {
+  content: "\f05a";
+}
+
+.icon-screenshot:before {
+  content: "\f05b";
+}
+
+.icon-remove-circle:before {
+  content: "\f05c";
+}
+
+.icon-ok-circle:before {
+  content: "\f05d";
+}
+
+.icon-ban-circle:before {
+  content: "\f05e";
+}
+
+.icon-arrow-left:before {
+  content: "\f060";
+}
+
+.icon-arrow-right:before {
+  content: "\f061";
+}
+
+.icon-arrow-up:before {
+  content: "\f062";
+}
+
+.icon-arrow-down:before {
+  content: "\f063";
+}
+
+.icon-share-alt:before {
+  content: "\f064";
+}
+
+.icon-resize-full:before {
+  content: "\f065";
+}
+
+.icon-resize-small:before {
+  content: "\f066";
+}
+
+.icon-plus:before {
+  content: "\f067";
+}
+
+.icon-minus:before {
+  content: "\f068";
+}
+
+.icon-asterisk:before {
+  content: "\f069";
+}
+
+.icon-exclamation-sign:before {
+  content: "\f06a";
+}
+
+.icon-gift:before {
+  content: "\f06b";
+}
+
+.icon-leaf:before {
+  content: "\f06c";
+}
+
+.icon-fire:before {
+  content: "\f06d";
+}
+
+.icon-eye-open:before {
+  content: "\f06e";
+}
+
+.icon-eye-close:before {
+  content: "\f070";
+}
+
+.icon-warning-sign:before {
+  content: "\f071";
+}
+
+.icon-plane:before {
+  content: "\f072";
+}
+
+.icon-calendar:before {
+  content: "\f073";
+}
+
+.icon-random:before {
+  content: "\f074";
+}
+
+.icon-comment:before {
+  content: "\f075";
+}
+
+.icon-magnet:before {
+  content: "\f076";
+}
+
+.icon-chevron-up:before {
+  content: "\f077";
+}
+
+.icon-chevron-down:before {
+  content: "\f078";
+}
+
+.icon-retweet:before {
+  content: "\f079";
+}
+
+.icon-shopping-cart:before {
+  content: "\f07a";
+}
+
+.icon-folder-close:before {
+  content: "\f07b";
+}
+
+.icon-folder-open:before {
+  content: "\f07c";
+}
+
+.icon-resize-vertical:before {
+  content: "\f07d";
+}
+
+.icon-resize-horizontal:before {
+  content: "\f07e";
+}
+
+.icon-bar-chart:before {
+  content: "\f080";
+}
+
+.icon-twitter-sign:before {
+  content: "\f081";
+}
+
+.icon-facebook-sign:before {
+  content: "\f082";
+}
+
+.icon-camera-retro:before {
+  content: "\f083";
+}
+
+.icon-key:before {
+  content: "\f084";
+}
+
+.icon-cogs:before {
+  content: "\f085";
+}
+
+.icon-comments:before {
+  content: "\f086";
+}
+
+.icon-thumbs-up:before {
+  content: "\f087";
+}
+
+.icon-thumbs-down:before {
+  content: "\f088";
+}
+
+.icon-star-half:before {
+  content: "\f089";
+}
+
+.icon-heart-empty:before {
+  content: "\f08a";
+}
+
+.icon-signout:before {
+  content: "\f08b";
+}
+
+.icon-linkedin-sign:before {
+  content: "\f08c";
+}
+
+.icon-pushpin:before {
+  content: "\f08d";
+}
+
+.icon-external-link:before {
+  content: "\f08e";
+}
+
+.icon-signin:before {
+  content: "\f090";
+}
+
+.icon-trophy:before {
+  content: "\f091";
+}
+
+.icon-github-sign:before {
+  content: "\f092";
+}
+
+.icon-upload-alt:before {
+  content: "\f093";
+}
+
+.icon-lemon:before {
+  content: "\f094";
+}
+
+.icon-phone:before {
+  content: "\f095";
+}
+
+.icon-check-empty:before {
+  content: "\f096";
+}
+
+.icon-bookmark-empty:before {
+  content: "\f097";
+}
+
+.icon-phone-sign:before {
+  content: "\f098";
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-github:before {
+  content: "\f09b";
+}
+
+.icon-unlock:before {
+  content: "\f09c";
+}
+
+.icon-credit-card:before {
+  content: "\f09d";
+}
+
+.icon-rss:before {
+  content: "\f09e";
+}
+
+.icon-hdd:before {
+  content: "\f0a0";
+}
+
+.icon-bullhorn:before {
+  content: "\f0a1";
+}
+
+.icon-bell:before {
+  content: "\f0a2";
+}
+
+.icon-certificate:before {
+  content: "\f0a3";
+}
+
+.icon-hand-right:before {
+  content: "\f0a4";
+}
+
+.icon-hand-left:before {
+  content: "\f0a5";
+}
+
+.icon-hand-up:before {
+  content: "\f0a6";
+}
+
+.icon-hand-down:before {
+  content: "\f0a7";
+}
+
+.icon-circle-arrow-left:before {
+  content: "\f0a8";
+}
+
+.icon-circle-arrow-right:before {
+  content: "\f0a9";
+}
+
+.icon-circle-arrow-up:before {
+  content: "\f0aa";
+}
+
+.icon-circle-arrow-down:before {
+  content: "\f0ab";
+}
+
+.icon-globe:before {
+  content: "\f0ac";
+}
+
+.icon-wrench:before {
+  content: "\f0ad";
+}
+
+.icon-tasks:before {
+  content: "\f0ae";
+}
+
+.icon-filter:before {
+  content: "\f0b0";
+}
+
+.icon-briefcase:before {
+  content: "\f0b1";
+}
+
+.icon-fullscreen:before {
+  content: "\f0b2";
+}
+
+.icon-group:before {
+  content: "\f0c0";
+}
+
+.icon-link:before {
+  content: "\f0c1";
+}
+
+.icon-cloud:before {
+  content: "\f0c2";
+}
+
+.icon-beaker:before {
+  content: "\f0c3";
+}
+
+.icon-cut:before {
+  content: "\f0c4";
+}
+
+.icon-copy:before {
+  content: "\f0c5";
+}
+
+.icon-paper-clip:before {
+  content: "\f0c6";
+}
+
+.icon-save:before {
+  content: "\f0c7";
+}
+
+.icon-sign-blank:before {
+  content: "\f0c8";
+}
+
+.icon-reorder:before {
+  content: "\f0c9";
+}
+
+.icon-list-ul:before {
+  content: "\f0ca";
+}
+
+.icon-list-ol:before {
+  content: "\f0cb";
+}
+
+.icon-strikethrough:before {
+  content: "\f0cc";
+}
+
+.icon-underline:before {
+  content: "\f0cd";
+}
+
+.icon-table:before {
+  content: "\f0ce";
+}
+
+.icon-magic:before {
+  content: "\f0d0";
+}
+
+.icon-truck:before {
+  content: "\f0d1";
+}
+
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+
+.icon-pinterest-sign:before {
+  content: "\f0d3";
+}
+
+.icon-google-plus-sign:before {
+  content: "\f0d4";
+}
+
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+
+.icon-money:before {
+  content: "\f0d6";
+}
+
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+
+.icon-caret-up:before {
+  content: "\f0d8";
+}
+
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+
+.icon-caret-right:before {
+  content: "\f0da";
+}
+
+.icon-columns:before {
+  content: "\f0db";
+}
+
+.icon-sort:before {
+  content: "\f0dc";
+}
+
+.icon-sort-down:before {
+  content: "\f0dd";
+}
+
+.icon-sort-up:before {
+  content: "\f0de";
+}
+
+.icon-envelope-alt:before {
+  content: "\f0e0";
+}
+
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+
+.icon-undo:before {
+  content: "\f0e2";
+}
+
+.icon-legal:before {
+  content: "\f0e3";
+}
+
+.icon-dashboard:before {
+  content: "\f0e4";
+}
+
+.icon-comment-alt:before {
+  content: "\f0e5";
+}
+
+.icon-comments-alt:before {
+  content: "\f0e6";
+}
+
+.icon-bolt:before {
+  content: "\f0e7";
+}
+
+.icon-sitemap:before {
+  content: "\f0e8";
+}
+
+.icon-umbrella:before {
+  content: "\f0e9";
+}
+
+.icon-paste:before {
+  content: "\f0ea";
+}
+
+.icon-user-md:before {
+  content: "\f200";
+}
+
+.dropup,
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  *margin-bottom: -3px;
+}
+
+.dropdown-toggle:active,
+.open .dropdown-toggle {
+  outline: 0;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.dropdown .caret {
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu .divider {
+  *width: 100%;
+  height: 1px;
+  margin: 9px 1px;
+  *margin: -5px 0 5px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+
+.dropdown-menu li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 20px;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  outline: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+
+.dropdown-menu .disabled > a,
+.dropdown-menu .disabled > a:hover {
+  color: #999999;
+}
+
+.dropdown-menu .disabled > a:hover {
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.open {
+  *z-index: 1000;
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid #000000;
+  content: "";
+}
+
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+     -moz-border-radius: 0 6px 6px 6px;
+          border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropup .dropdown-submenu > .dropdown-menu {
+  top: auto;
+  bottom: 0;
+  margin-top: 0;
+  margin-bottom: -2px;
+  -webkit-border-radius: 5px 5px 5px 0;
+     -moz-border-radius: 5px 5px 5px 0;
+          border-radius: 5px 5px 5px 0;
+}
+
+.dropdown-submenu > a:after {
+  display: block;
+  float: right;
+  width: 0;
+  height: 0;
+  margin-top: 5px;
+  margin-right: -10px;
+  border-color: transparent;
+  border-left-color: #cccccc;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #ffffff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+     -moz-border-radius: 6px 0 6px 6px;
+          border-radius: 6px 0 6px 6px;
+}
+
+.dropdown .dropdown-menu .nav-header {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.typeahead {
+  z-index: 1051;
+  margin-top: 2px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.well-large {
+  padding: 24px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.well-small {
+  padding: 9px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -6030,6 +6003,33 @@ textarea.span1,
 
 .collapse.in {
   height: auto;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.close:hover {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
 }
 
 .modal-backdrop {
